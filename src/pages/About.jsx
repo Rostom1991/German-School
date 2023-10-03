@@ -11,7 +11,7 @@ import telcIMG from "../assets/telcIMG.jpg";
 function About() {
   return (
     <div>
-      <div className="h-[70vh] bg-blend-multiply bg-blue-950/60 grid place-items-center bg-[url('src/assets/aboutCover.webp')] bg-no-repeat bg-cover">
+      <div className="h-[70vh] bg-blend-multiply bg-blue-950/60 grid place-items-center bg-[url('./assets/aboutCover.webp')] bg-no-repeat bg-cover">
         <div className="flex flex-col w-full md:pl-48 items-center md:items-start gap-0">
           <motion.h1
             initial={{ x: "+200vw" }}

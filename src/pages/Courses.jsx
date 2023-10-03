@@ -14,7 +14,7 @@ function Courses() {
   return (
     <div className="bg-zinc-200/30">
       <div className="bg-orange-50 h-[60vh] mt-20">
-        <div className="h-full relative flex flex-col items-center justify-center  gap-2  bg-lazy bg-blend-multiply bg-blue-800/40 bg-cover bg-no-repeat bg-[url('src/assets/cover.avif')] ">
+        <div className="h-full relative flex flex-col items-center justify-center  gap-2  bg-lazy bg-blend-multiply bg-blue-800/40 bg-cover bg-no-repeat bg-[url('./assets/cover.avif')] ">
           <motion.h1
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
