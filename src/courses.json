@@ -1,0 +1,48 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "title": "German A1",
+      "img": "https://media.istockphoto.com/id/175514319/photo/students-at-table-with-laptop-and-books.jpg?s=612x612&w=0&k=20&c=ttKHLQjC5wn1CZLmgVUAkZJQcsrySrtAlXVLCJ-77a4=",
+      "img2": "src/assets/studentA1.avif",
+      "price": "700 TD",
+      "hours": "90 hours",
+      "intro": "Welcome to German School! We're delighted that you've chosen to learn German. The A1 course is the perfect starting point for beginners. In this course, you will learn the basics of the German language, such as simple conversations, basic grammar, and understanding everyday situations. Our experienced teachers are here to support you in expressing yourself confidently in German. We're confident that you'll make progress in no time. Good luck and enjoy your learning!",
+      "instructor": "Jane Doe",
+      "photo": "https://st.depositphotos.com/1003989/60649/i/450/depositphotos_606497998-stock-photo-smiling-teacher-woman-holding-book.jpg"
+    },
+    {
+      "id": 2,
+      "title": "German A2",
+      "img": "https://www.newcastle.edu.au/__data/assets/image/0005/95747/iStock_000033197040Small.jpg",
+      "img2": "src/assets/studentA2.avif",
+      "price": "800 TD",
+      "hours": "90 hours",
+      "intro": "Congratulations on reaching the A2 level! You've already acquired solid foundations of the German language. In the A2 course, we will now delve deeper into the language. You will be able to engage in longer conversations, comprehend simple texts, and navigate various everyday situations. Grammatically, you will encounter more complexity and further develop your skills. Our dedicated teachers are here to help you take your German to the next level. You're making great progress! Keep it up and best of luck with your learning journey!",
+      "instructor": "Jane Doe",
+      "photo": "https://st.depositphotos.com/1003989/60649/i/450/depositphotos_606497998-stock-photo-smiling-teacher-woman-holding-book.jpg"
+    },
+    {
+      "id": 3,
+      "title": "German B1",
+      "img": "https://images.pexels.com/photos/3762800/pexels-photo-3762800.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "img2": "src/assets/studentB1.avif",
+      "price": "900 TD",
+      "hours": "90 hours",
+      "intro": "Congratulations on reaching the B1 level! You have already developed a solid understanding of the German language. In the B1 course, we will focus on the intricacies of the language. You will be able to engage in more complex conversations, understand longer texts, and assert yourself in various social and professional situations. Grammatically, you will refine your skills and build a broader vocabulary. Our experienced teachers are here to guide you on this journey. You're making great progress! Keep it up and best of luck with your learning process!",
+      "instructor": "John Doe",
+      "photo": "https://img.freepik.com/free-photo/elegant-young-teacher-with-brunette-hair-stylish-light-shirt-black-striped-suit-glasses-holding-writings-pen-giving-lecture_197531-24666.jpg"
+    },
+    {
+      "id": 4,
+      "title": "German B2",
+      "img": "https://img.freepik.com/premium-photo/young-caucasian-man-holding-germany-flag-showing-number-two-with-fingers_1187-88344.jpg",
+      "img2": "src/assets/studentB2.jpg",
+      "price": "1000 TD",
+      "hours": "90 hours",
+      "intro": "Congratulations on reaching the B2 level! You have already developed an advanced understanding of the German language. In the B2 course, we will focus on refining your language skills. You will be able to engage in complex conversations, understand challenging texts, and express yourself fluently in a wide range of situations. Grammatically, you will deepen your knowledge and explore the nuances of the German language. Our competent teachers are here to support you on this journey. You're making excellent progress! Keep it up, and best of luck with your language adventure!",
+      "instructor": "John Doe",
+      "photo": "https://img.freepik.com/free-photo/elegant-young-teacher-with-brunette-hair-stylish-light-shirt-black-striped-suit-glasses-holding-writings-pen-giving-lecture_197531-24666.jpg"
+    }
+  ]
+}

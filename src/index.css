@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Sora", inter;
+  min-height: 100vh;
+}
+
+.card-shadow {
+  box-shadow: 0 0 30px -7px lightgrey;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  65% {
+    transform: rotate(-360deg);
+  }
+  100% {
+    transform: rotate(720deg);
+  }
+}
+.rotate-smile {
+  animation: 4s spin linear;
+}
