@@ -20,7 +20,7 @@ function CourseDetails() {
           animate={{ opacity: 1 }}
           transition={{ duration: 1, ease: "linear" }}
           className="col-span-1 shadow-lg rounded-sm">
-          <img className="rounded-sm" src={`../${course.img2}`} alt="" />
+          <img className="rounded-sm" src={course.img2} alt="courseIMG" />
         </motion.div>
         <div className="flex flex-col max-w-2xl px-4 md:px-0  justify-start items-start">
           <div className="gap-2 flex flex-col">
