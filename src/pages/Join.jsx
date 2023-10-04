@@ -1,7 +1,7 @@
 import axios from "axios";
 import { motion } from "framer-motion";
-import React, { useEffect, useState } from "react";
-import joinIMG from "../assets/joinStudent.avif";
+import { useState } from "react";
+import joinIMG from "../assets/joinStudent.jpg";
 import { useSelector } from "react-redux";
 
 const JoinForm = () => {
