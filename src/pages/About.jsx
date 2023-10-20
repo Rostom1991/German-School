@@ -75,7 +75,7 @@ function About() {
               initial={{ x: "-200vw" }}
               animate={{ x: 0 }}
               transition={{ duration: 0.7, ease: "linear" }}
-              className="text-4xl text-rose-600 font-light ">
+              className="text-4xl text-rose-600 text-center font-light ">
               Our Approach
             </motion.h1>
 
@@ -109,7 +109,7 @@ function About() {
       </section>
       <section className="py-24 gap-24 flex flex-col">
         <div className="w-10/12 mx-auto flex flex-col gap-8 items-center justify-center">
-          <h1 className="font-light text-rose-800 md:text-4xl text-2xl">
+          <h1 className="font-light text-center text-rose-800 md:text-4xl text-2xl">
             Are you looking for a well-known language school to learn German?
           </h1>
           <p className="text-gray-500 text-center max-w-[50rem] font-light leading-relaxed md:text-sm text-xs">
@@ -121,7 +121,7 @@ function About() {
           </p>
         </div>
         <div className="sm:flex justify-center items-center w-11/12 mx-auto ">
-          <div className="w-2/3 bg-gray-200 shadow-lg">
+          <div className="md:w-2/3 bg-gray-200 shadow-lg">
             <img className="w-full" src={telcIMG} alt="" />
           </div>
           <div className="w-full bg-yellow-50 flex flex-col gap-6 justify-center p-16 border-2 items-center">

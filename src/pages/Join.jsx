@@ -27,7 +27,10 @@ const JoinForm = () => {
     e.preventDefault();
     // Add your form submission logic here
     axios
-      .post("http://localhost:5000/join", formData)
+      .post(
+        "https://api.render.com/deploy/srv-cki57aa12bvs73abirs0?key=tHaMOEMIfyg",
+        formData
+      )
       .then((response) => {
         setFormData({ name: "", email: "", phone: "", level: "German A1" });
         setError(false);
@@ -62,7 +65,7 @@ const JoinForm = () => {
                 </span>
               )}
               {success && (
-                <span className="bg-cyan-600 rounded-sm shadow-xl animate-pulse px-16 text-white text-sm py-1">
+                <span className=" bg-teal-500   rounded-sm shadow-xl animate-pulse px-16 text-white text-sm py-1">
                   {" "}
                   {success}{" "}
                 </span>
@@ -87,6 +90,7 @@ const JoinForm = () => {
                 <div className="flex flex-col gap-1">
                   <span className="text-rose-700 text-sm">Name</span>
                   <input
+                    required
                     name="name"
                     className=" focus:border-2 focus:border-zinc-300 caret-slate-500 rounded-full outline-none border-gray-300 bg-gray-50/50 border-[1.5px] p-[0.6rem] pl-4 text-xs "
                     type="text"
@@ -98,6 +102,7 @@ const JoinForm = () => {
                 <div className="flex flex-col gap-1">
                   <span className="text-rose-700 text-sm">Email</span>
                   <input
+                    required
                     name="email"
                     className="focus:border-2 focus:border-zinc-300 caret-slate-500 rounded-full outline-none border-gray-300 bg-gray-50/50 border-[1.5px] p-[0.6rem] pl-4 text-xs "
                     type="text"
@@ -109,6 +114,7 @@ const JoinForm = () => {
                 <div className="flex flex-col gap-1">
                   <span className="text-rose-700 text-sm">Phone</span>
                   <input
+                    required
                     name="phone"
                     className="focus:border-2 focus:border-zinc-300 caret-slate-500 rounded-full outline-none border-gray-300 bg-gray-50/50 border-[1.5px] p-[0.6rem] pl-4 text-xs "
                     type="text"
@@ -144,7 +150,7 @@ const JoinForm = () => {
                   initial={{ x: "-100vw" }}
                   animate={{ x: 0 }}
                   transition={{ duration: 0.5, ease: "linear" }}
-                  className="bg-rose-600   rounded-full text-sm hover:shadow-2xl transition-all duration-500 ease-linear uppercase font-light hover:bg-rose-700 text-white w-1/2 py-2 px-10">
+                  className="bg-rose-600 cursor-pointer  rounded-full text-sm hover:shadow-2xl transition-all duration-500 ease-linear uppercase font-light hover:bg-rose-700 text-white md:w-1/2 py-2 px-10">
                   Enroll Now
                 </motion.button>
               </div>

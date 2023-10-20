@@ -110,14 +110,14 @@ function Navbar() {
         <div className="w-[1.5rem] lg:hidden relative  ">
           <img
             onClick={() => setBurgerMenu(!burgerMenu)}
-            className="opacity-95 cursor-pointer"
+            className="opacity-95 ring-1 ring-gray-800 hover:ring-rose-800 p-1 rounded-full cursor-pointer"
             src={burger}
             alt=""
           />
           <div
             className={`${
               burgerMenu
-                ? "absolute bg-black/90 rounded-xl  border-gray-900 py-2 border-2 right-0 z-20"
+                ? "absolute bg-black/90  rounded-xl  border-gray-900 py-2 border-2 right-0 z-20"
                 : "hidden"
             }`}>
             <nav>
@@ -127,9 +127,11 @@ function Navbar() {
                   className="hover:text-rose-500 px-6 py-3 cursor-pointer">
                   Home
                 </Link>
-                <li className="hover:text-rose-500 px-6 py-3 cursor-pointer">
+                <Link
+                  to="/about"
+                  className="hover:text-rose-500 px-6 py-3 cursor-pointer">
                   About
-                </li>
+                </Link>
                 <li
                   onMouseEnter={() => setCoursesMenu(true)}
                   onMouseLeave={() => setCoursesMenu(false)}
@@ -164,6 +166,11 @@ function Navbar() {
                   to="team"
                   className="hover:text-rose-500 px-6 py-3 cursor-pointer">
                   Team
+                </Link>
+                <Link
+                  to="join"
+                  className="hover:text-rose-500  rounded-full px-6 py-3 cursor-pointer">
+                  Join
                 </Link>
               </ul>
             </nav>

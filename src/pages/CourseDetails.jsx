@@ -14,7 +14,7 @@ function CourseDetails() {
 
   return (
     <div className=" md:h-screen md:grid place-content-center p-8 pt-24 pb-24 bg-zinc-200/40">
-      <div className="border-2 rounded grid relative md:gap-0 gap-8 lg:grid-cols-2 place-items-center  p-4 bg-white/90 w-11/12 mx-auto md:pl-10 md:py-10 py-4 ">
+      <div className="border-2 rounded grid relative md:gap-0 gap-8 lg:grid-cols-2 place-items-center  p-4 bg-white/90 md:w-11/12 mx-auto md:pl-10 md:py-10 py-4 ">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -46,13 +46,13 @@ function CourseDetails() {
                   {course.instructor}
                 </span>
                 <img
-                  className="w-[5rem] h-[5rem] object-cover rounded-full border-2"
+                  className="md:w-[5rem] md:h-[5rem] w-[3rem] h-[3rem] object-cover rounded-full border-2"
                   src={course.photo}
                   alt=""
                 />
               </div>
             </div>
-            <div className="flex justify-center">
+            <div className="flex justify-center my-4 md:my-0">
               <motion.button
                 onClick={enrollToCourse}
                 initial={{ opacity: 0 }}

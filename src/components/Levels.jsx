@@ -42,7 +42,7 @@ function Levels() {
       <div className="grid bg-white/90 p-8 border-2 border-gray-200 lg:grid-cols-2 gap-y-16 lg:gap-y-24 md:mx-48 place-items-center ">
         {courses.map((course) => (
           <div
-            className="flex flex-col w-4/5 border-[2px] card-shadow rounded border-gray-200  items-center justify-center"
+            className="flex flex-col md:w-4/5 border-[2px] card-shadow rounded border-gray-200  items-center justify-center"
             key={course.id}>
             <div className="w-full relative ">
               <button

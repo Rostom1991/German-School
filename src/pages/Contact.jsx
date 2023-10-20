@@ -89,6 +89,7 @@ function Contact() {
                 <div className="flex flex-col gap-1">
                   <span className="text-rose-700 text-sm">Name</span>
                   <input
+                    required
                     onChange={handleChange}
                     name="name"
                     value={formData.name}
@@ -100,6 +101,7 @@ function Contact() {
                 <div className="flex flex-col gap-1">
                   <span className="text-rose-700 text-sm">Phone</span>
                   <input
+                    required
                     onChange={handleChange}
                     name="phone"
                     value={formData.phone}
@@ -117,6 +119,7 @@ function Contact() {
                 <div className="flex flex-col gap-1">
                   <span className="text-rose-700 text-sm">Email</span>
                   <input
+                    required
                     onChange={handleChange}
                     name="email"
                     value={formData.email}
@@ -128,6 +131,7 @@ function Contact() {
                 <div className="flex flex-col gap-1">
                   <span className="text-rose-700 text-sm">Subject</span>
                   <input
+                    required
                     onChange={handleChange}
                     name="subject"
                     value={formData.subject}
@@ -142,6 +146,7 @@ function Contact() {
               <span className="text-rose-700 text-sm">Message</span>
               <div className="rounded-xl">
                 <textarea
+                  required
                   onChange={handleChange}
                   value={formData.message}
                   className=" focus:border-2 focus:border-zinc-300 caret-slate-500 w-full h-full bg-gray-50/50 text-xs p-3 outline-none border-2 rounded-xl"

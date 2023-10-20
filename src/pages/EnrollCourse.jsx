@@ -87,6 +87,7 @@ const EnrollCourse = () => {
                 <div className="flex flex-col gap-1">
                   <span className="text-rose-700 text-sm">Name</span>
                   <input
+                    required
                     name="name"
                     value={formData.name}
                     className=" focus:border-2 focus:border-zinc-300 caret-slate-500 rounded-full outline-none border-gray-300 bg-gray-50/50 border-[1.5px] p-[0.6rem] pl-4 text-xs "
@@ -99,6 +100,7 @@ const EnrollCourse = () => {
                 <div className="flex flex-col gap-1">
                   <span className="text-rose-700 text-sm">Email</span>
                   <input
+                    required
                     name="email"
                     onChange={handleChange}
                     value={formData.email}
@@ -110,6 +112,7 @@ const EnrollCourse = () => {
                 <div className="flex flex-col gap-1">
                   <span className="text-rose-700 text-sm">Phone</span>
                   <input
+                    required
                     name="phone"
                     onChange={handleChange}
                     value={formData.phone}
