@@ -16,10 +16,6 @@
     {
       "src": "/(.*)",
       "dest": "backend/server.js"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "dist/index.html"
     }
   ]
 }
