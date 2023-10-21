@@ -27,10 +27,7 @@ const JoinForm = () => {
     e.preventDefault();
     // Add your form submission logic here
     axios
-      .post(
-        "https://api.render.com/deploy/srv-cki57aa12bvs73abirs0?key=tHaMOEMIfyg",
-        formData
-      )
+      .post("https://german-school-api.vercel.app/join", formData)
       .then((response) => {
         setFormData({ name: "", email: "", phone: "", level: "German A1" });
         setError(false);

@@ -25,7 +25,7 @@ function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:5000/contact", formData)
+      .post("https://german-school-api.vercel.app/contact", formData)
       .then((response) => {
         setFormData({
           name: "",
