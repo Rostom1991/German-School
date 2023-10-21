@@ -14,11 +14,8 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "backend/server.js"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "dist/$1"
+      "dest": "backend"
     }
-  ]
+  ],
+  "rewrites": [{ "source": "/(.*)", "destination": "/" }]
 }
