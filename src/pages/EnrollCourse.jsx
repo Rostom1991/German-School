@@ -26,7 +26,7 @@ const EnrollCourse = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:5000/join", formData)
+      .post("https://viridis-it-api.vercel.app/join", formData)
       .then(() => {
         setFormData({ name: "", email: "", phone: "", level: course.title });
         setError(false);
