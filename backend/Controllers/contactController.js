@@ -25,5 +25,16 @@ const addContact = async (req, res) => {
     res.status(400).json({ error: error });
   }
 };
+const getContacts = async (req, res) => {
+  try{
+    const contacts = await Contact.find({})
+    if(!contacts){
+      res.status(404).json({ error: 'Not Contact Found' })
+    }
+    res.status(200).json({ contacts })
+  }catch{
+    res.status(400).json({error: error.message})
+  }
+}
 
-module.exports = { addContact };
+module.exports = { addContact, getContacts };
