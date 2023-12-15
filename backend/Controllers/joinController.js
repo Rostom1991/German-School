@@ -1,6 +1,7 @@
 /* eslint-disable no-undef */
 
 const validator = require("validator");
+const mongoose = require('mongoose')
 const Student = require("../Models/joinModel");
 const joinStudent = async (req, res) => {
   const { name, email, phone, level } = req.body;
@@ -24,5 +25,23 @@ const joinStudent = async (req, res) => {
     res.status(404).json({ error: error });
   }
 };
+const getStudents = async (req, res) => {
+  const students = await Student.find({})
+  if(!students){
+    return res.status(404).json({ error: 'There are no students yet!' })
+  }
+  res.status(200).json({ students })
+}
 
-module.exports = { joinStudent };
+const getStudent = async (req, res) => {
+  const { id } = req.params;
+  if(!mongoose.Types.ObjectId.isValid(id)){
+    return res.status(400).json({ error: 'ID is not valid!' })
+  }
+  const student = await Student.findOne({ _id: id })
+  if(!student){
+    return res.status(404).json({ error : "Student doesn't exist!" })
+  }
+  res.status(200).json({ student })
+}
+module.exports = { joinStudent, getStudent, getStudents };

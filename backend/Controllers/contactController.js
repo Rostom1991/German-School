@@ -1,5 +1,6 @@
 /* eslint-disable no-undef */
 const validator = require("validator");
+const mongoose = require("mongoose");
 const Contact = require("../Models/contactModel");
 const addContact = async (req, res) => {
   const { name, email, phone, subject, message } = req.body;
@@ -26,15 +27,26 @@ const addContact = async (req, res) => {
   }
 };
 const getContacts = async (req, res) => {
-  try{
-    const contacts = await Contact.find({})
-    if(!contacts){
-      res.status(404).json({ error: 'Not Contact Found' })
+  try {
+    const contacts = await Contact.find({});
+    if (!contacts) {
+      res.status(404).json({ error: "Not Contact Found" });
     }
-    res.status(200).json({ contacts })
-  }catch{
-    res.status(400).json({error: error.message})
+    res.status(200).json({ contacts });
+  } catch {
+    res.status(400).json({ error: error.message });
   }
-}
+};
+const getContact = async (req, res) => {
+  const { id } = req.params;
+  if (!mongoose.Types.ObjectId.isValid(id)) {
+    return res.status(400).json({ error: "ID is not valid!" });
+  }
+  const contact = await Contact.findOne({ _id: id });
+  if (!contact) {
+    return res.status(404).json({ error: "Contact doesn't exist!" });
+  }
+  res.status(200).json({ contact });
+};
 
-module.exports = { addContact, getContacts };
+module.exports = { addContact, getContacts, getContact };

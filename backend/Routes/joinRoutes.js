@@ -1,10 +1,20 @@
 /* eslint-disable no-undef */
 
-const { joinStudent } = require("../Controllers/joinController");
+const {
+  joinStudent,
+  getStudent,
+  getStudents,
+} = require("../Controllers/joinController");
 
-//JOIN STUDENT
 const router = require("express").Router();
 
+//JOIN STUDENT
 router.post("/", joinStudent);
+
+//GET STUDENT
+router.get("/:id", getStudent);
+
+//GET STUDENTS
+router.get("/", getStudents);
 
 module.exports = router;
