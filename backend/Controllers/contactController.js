@@ -28,7 +28,7 @@ const addContact = async (req, res) => {
 };
 const getContacts = async (req, res) => {
   try {
-    const contacts = await Contact.find({});
+    const contacts = await Contact.find().sort({ createdAt: -1 });
     if (!contacts) {
       res.status(404).json({ error: "Not Contact Found" });
     }
