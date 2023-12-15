@@ -32,7 +32,7 @@ const getContacts = async (req, res) => {
     if (!contacts) {
       res.status(404).json({ error: "Not Contact Found" });
     }
-    res.status(200).json({ contacts });
+    res.status(200).json(contacts);
   } catch {
     res.status(400).json({ error: error.message });
   }

@@ -30,7 +30,7 @@ const getStudents = async (req, res) => {
   if(!students){
     return res.status(404).json({ error: 'There are no students yet!' })
   }
-  res.status(200).json({ students })
+  res.status(200).json( students )
 }
 
 const getStudent = async (req, res) => {
@@ -42,6 +42,6 @@ const getStudent = async (req, res) => {
   if(!student){
     return res.status(404).json({ error : "Student doesn't exist!" })
   }
-  res.status(200).json({ student })
+  res.status(200).json( {student} )
 }
 module.exports = { joinStudent, getStudent, getStudents };
