@@ -4,6 +4,7 @@ const {
   joinStudent,
   getStudent,
   getStudents,
+  deleteStudent,
 } = require("../Controllers/joinController");
 
 const router = require("express").Router();
@@ -16,5 +17,8 @@ router.get("/:id", getStudent);
 
 //GET STUDENTS
 router.get("/", getStudents);
+
+//DELETE STUDENT
+router.delete("/:id", deleteStudent);
 
 module.exports = router;

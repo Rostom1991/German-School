@@ -44,4 +44,13 @@ const getStudent = async (req, res) => {
   }
   res.status(200).json({ student });
 };
-module.exports = { joinStudent, getStudent, getStudents };
+
+const deleteStudent = async (req, res) => {
+  const { id } = req.params;
+  const student = await Student.findOneAndDelete({ _id: id });
+  if (!student) {
+    return res.status(404).json({ error: "Error deleting student " });
+  }
+  res.status(200).json({ message: "Student deleted successfully!" });
+};
+module.exports = { joinStudent, getStudent, getStudents, deleteStudent };
